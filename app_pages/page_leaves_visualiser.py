@@ -16,7 +16,7 @@ def page_leaves_visualiser_body():
         f"* The client is interested in having a study that visually "
         f"differentiates a leaves affected with powdery mildew and healthy leaves.")
 
-    version = 'v1'
+    version = 'v2'
     if st.checkbox("Difference between average and variability image"):
 
       avg_healthy = plt.imread(
