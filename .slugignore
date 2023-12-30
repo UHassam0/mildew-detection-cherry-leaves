@@ -1,2 +1,5 @@
 inputs/cherry-leaves-data/cherry-leaves/test
 inputs/cherry-leaves-data/cherry-leaves/train
+outputs/.ipynb_checkpoints
+.Trash-1000
+.ipynb_checkpoints
