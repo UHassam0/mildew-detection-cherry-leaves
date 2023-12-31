@@ -56,7 +56,7 @@ def load_model_and_predict(my_image, version):
     target_map = {v: k for k, v in {'healthy': 0, 'powdery_mildew': 1}.items()}
     pred_class = target_map[pred_proba > 0.5]
 
-    if pred_class.lower() == healthy:
+    if pred_class.lower() == 'healthy':
         is_has = 'is'
     else:
         is_has = 'has'
