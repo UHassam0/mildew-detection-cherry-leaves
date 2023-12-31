@@ -11,7 +11,7 @@ import random
 
 
 def page_leaves_visualiser_body():
-    st.write("### Cells Visualizer")
+    st.write("### Cherry Leaves Visualizer")
     st.info(
         f"* The client is interested in having a study that visually "
         f"differentiates a leaves affected with powdery mildew and healthy leaves.")

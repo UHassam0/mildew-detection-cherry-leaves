@@ -12,19 +12,21 @@ from src.machine_learning.predictive_analysis import (
 
 def page_mildew_detector_body():
     st.info(
-        f"* The client is interested in telling whether a given leaf contains powdery mildew "
-        f"or not."
+        f"* The client is interested in telling whether a given leaf contains "
+        f"powdery mildew or not."
         )
 
     st.write(
-        f"* You can download a set of parasitised and uninfected cells for live prediction. "
-        f"You can download the images from [here](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)."
+        f"* You can download a set of healthy and powdery mildew affected "
+        f"leaves for live prediction. "
+        f"You can download the images from "
+        f"[here](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)."
         )
 
     st.write("---")
 
     images_buffer = st.file_uploader('Upload leaf image samples. You may select more than one.',
-                                        type='jpg',accept_multiple_files=True)
+                                     type='jpg', accept_multiple_files=True)
    
     if images_buffer is not None:
         df_report = pd.DataFrame([])
