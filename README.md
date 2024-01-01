@@ -25,13 +25,13 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ### User Stories
 * Business Requirement 1: Data Visualization
-      * As the client, I can average images for healthy and mildew affected leaves, in order to try to pick out identifiable characteristics
-      * As the client, I can view the difference between the average images, in order to try to pick out identifiable characteristics
-      * As the client, I can choose to see a montage of either healthy or powdery mildew leaves, in order to review them against my expectations
+  * As the client, I can average images for healthy and mildew affected leaves, in order to try to pick out identifiable characteristics
+  * As the client, I can view the difference between the average images, in order to try to pick out identifiable characteristics
+  * As the client, I can choose to see a montage of either healthy or powdery mildew leaves, in order to review them against my expectations
 
 * Business Requirement 2: Classification
-      * As the client I can upload an image(s) to predict if a leaf is healthy or affected by powdery mildew
-      * As the client I can generate and download csv reports based on batches of images, in order to quickly and easily review thmm
+  * As the client I can upload image(s) to predict if a leaf is healthy or affected by powdery mildew
+  * As the client I can generate and download csv reports based on batches of images, in order to quickly and easily review thmm
 
 ## ML Business Case
 * I want an ML model to predict if a leave is affected by powdery mildew or not, based on images provided the client. It is a 2-class, single label, supervised classfication model
@@ -40,7 +40,6 @@ To save time in this process, the IT team suggested an ML system that detects in
 * The current process requires an employee to spend around 30 minutes inspecting each tree and applying treatment if the tree is diseased. The ML model could drastically speed up the identification process
 * The data is provided by the client
   * Train data - target: powder mildew or not; features: all images
-
 
 ## Dashboard Design
 
@@ -68,7 +67,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 * Business requirement 2 information - "The client is interested in telling whether a given leaf contains powdery mildew or not."
 * Link to download images for live prediction.
-* User Interface with a file uploader widget. The user should upload multiple cherry leaf images. It will display the image and a prediction statement, indicating if the leaf is affected bymildew or not and the probability associated with this statement.
+* User Interface with a file uploader widget. The user should upload multiple cherry leaf images. It will display the image and a prediction statement, indicating if the leaf is affected by mildew or not and the probability associated with this statement.
 * Table with the image name and prediction results.
 * Download button to download table.
 
@@ -82,7 +81,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 * Model History - Accuracy and Losses
 * Model evaluation result
 
-## Unfixed Bugs
+## Bugs
 * I had problems with Makrdown cells in the jupyter notebooks that when processed would not match even the text in those cells at times - this resulted in completing and saving these multiple times
 * I had an issue where the v1 of the model had not saved properly and had to resave it
 
@@ -98,8 +97,15 @@ To save time in this process, the IT team suggested an ML system that detects in
 3. Select your repository name and click Search. Once it is found, click Connect.
 4. Select the branch you want to deploy, then click Deploy Branch.
 5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file. 
+6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
+### Cloning
+
+You may use the URL of this Code Repository to clone it for yourself in your directory and Code Editor of choice using the git clone command
+
+### Forking
+
+You may [fork this repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo). You need to click on fork just above the code to the right of the page beneath the header of this page. You can also use git commands in the command line
 
 ## Main Data Analysis and Machine Learning Libraries
 
@@ -107,14 +113,14 @@ To save time in this process, the IT team suggested an ML system that detects in
 * Pandas: It is an open-source, python package used for working with data sets. It has functions for analyzing, cleaning, exploring, and manipulating data.
 * Matplotlib: It is a cross-platform, data visualization and graphical plotting library for python.
 * Seaborn: It is Python data visualization library based on Matplotlib. It will be used to visualize random distributions.
-* Plotly: It is an interactive, open-soource, and browser-based gra6. Tensorflow: It is an open-sourec machine learning platform focused on deep neural networks.phing library. Used to create visualisations within Jupyter notebooks to present the data.
+* Plotly: It is an interactive, open-source, and browser-based gra6. Tensorflow: It is an open-sourec machine learning platform focused on deep neural networks.phing library. Used to create visualisations within Jupyter notebooks to present the data.
 * Tensorflow: It is an open-source machine learning platform focused on deep neural networks.
 * Shutil: Used form file copying and removal.
 * Streamlit: It is used to create web apps for data science and machine learning.
-* Joblib: It is a set of tools to provide lightweighting pipelining in Python.
+* Joblib: It is a set of tools to provide lightweight pipelining in Python.
 * PIL: Python Imaging Library is a free and open-source additional library for the Python programming language that adds support for opening, manipulating, and saving many different image file formats.
 
-## Credits 
+## Credits
 
 * Relied heavily upon the Malaria Detection Walkthrough project - https://github.com/Code-Institute-Solutions/WalkthroughProject01
 * Also used <https://github.com/olleholmgren/mildew-detection> for some inspiraion on the README
